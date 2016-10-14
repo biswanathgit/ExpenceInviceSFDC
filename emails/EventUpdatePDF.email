@@ -1,0 +1,38 @@
+<messaging:emailTemplate subject="Event upadate" recipientType="User" relatedToType="MemberExpense__c">
+
+    <messaging:attachment renderAs="PDF" filename="Invoice.pdf">
+    <html>
+        <head>
+          <style>
+              .center{
+                color:red;
+                font-size: 20px;
+                margin:0 auto;
+                text-align:center;
+              }
+          </style>
+        </head>
+        <body>
+           <h3> Hi Thank U for the Contribution {!relatedTo.Member__r.First_Name__c} </h3> 
+            <table border="2"  width="600px" Class="center" >
+                
+                <tr>
+                    <td>Event Name</td>
+                    <td>{!relatedTo.Expense__r.Name__c} </td>
+                </tr>
+                <tr>
+                    <td>Total Event cost</td>
+                    <td>{!relatedTo.Expense__r.Amount__c} </td>
+                </tr>
+                <tr>
+                    <td>Contribution Amount</td>
+                    <td>{!relatedTo.Contribution_amount__c} </td>
+                </tr>
+            </table>     
+        </body>
+    </html>
+</messaging:attachment>
+<messaging:plainTextEmailBody >
+
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>
