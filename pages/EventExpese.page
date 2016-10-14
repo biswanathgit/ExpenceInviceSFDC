@@ -1,0 +1,43 @@
+<apex:page sidebar="false" standardController="Event__c" renderAs="pdf" applyBodyTag="false">
+
+
+<head>
+
+</head>
+ <body>
+         
+     <h2> Event Invoice </h2>
+
+     <table border="2"  width="600px">
+     
+      <tr>
+          <td style="color:red;margin-left:30px;">Name</td>
+          <td><apex:OutputText value="{!Event__c.Name__c}" ></apex:OutputText></td>
+      </tr>
+      <tr>
+          <td style="color:red;margin-left:30px;">Description </td>
+          <td><apex:OutputText value="{!Event__c.Description__c}"></apex:OutputText></td>
+      </tr>
+       <tr>
+          <td style="color:red;margin-left:30px;">Amount </td>
+          <td><apex:OutputText value="{!Event__c.Amount__c}"></apex:OutputText></td>
+      </tr>
+       <tr>
+          <td style="color:red;margin-left:30px;">Date </td>
+          <td><apex:OutputText value="{!Event__c.Date__c}"></apex:OutputText></td>
+      </tr>
+       <tr>
+          <td style="color:red;margin-left:30px;">Member Count </td>
+          <td><apex:OutputText value="{!Event__c.Members_Count__c}"></apex:OutputText></td>
+      </tr>
+     
+     </table>
+     </body>
+    
+  <apex:OutputText value="{!Event__c.Members_Count__c}"></apex:OutputText>
+  
+    
+
+<!--  -->
+
+</apex:page>
