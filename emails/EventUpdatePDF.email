@@ -14,7 +14,10 @@
         </head>
         <body>
            <h3> Hi Thank U for the Contribution {!relatedTo.Member__r.First_Name__c} </h3> 
-            <table border="2"  width="600px" Class="center" >
+		  
+		  <!--Event details -->
+
+		  <table border="2"  width="600px" Class="center" >
                 
                 <tr>
                     <td>Event Name</td>
