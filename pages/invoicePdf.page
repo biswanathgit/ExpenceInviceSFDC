@@ -4,6 +4,9 @@
   <html>
         <head/>
         <body>
+		
+		
+		<!--Event details-->
             <table border="2"  width="600px" Class="center" >
               <tr>
                  <td>TOTAL AMOUNT</td>
@@ -23,7 +26,9 @@
               </tr>
               
             
-            </table> 
+            </table>
+
+		<!--Indivisual contribution details-->
             <h5>expenses details</h5>
             <table border="2"  width="600px" Class="center">
              <tr>
